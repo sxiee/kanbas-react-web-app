@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="/Users/sarahxie/2023/fall/webdev/kanbas-react-web-app/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Users/sarahxie/2023/fall/webdev/kanbas-react-web-app/public/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../kanbas.css"
+         rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a54970885f.js" crossorigin="anonymous"></script>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
+    <div class="header">
+        <i class="fa-solid fa-bars fa-2x" style="color: #e20000;"></i>
+        <p>Sarah Xie's Profile</p>
+        <hr>
+      </div>
     <table border="0" width="100%">
     <tbody>
     <tr>
     <td valign="top">
-    <ul>
-        <li><a href="index.html">Account</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href='../home.html'>Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-        </ul>
+        <div class="sidenav">
+
+        <li><img src="/Users/sarahxie/Desktop/Northeastern.png" alt="Northeastern Logo" width="50"></li>
+
+
+        </li><a href="#">
+        <i class="fa-regular fa-circle-user fa-2x" style="color: #ffffff;"></i>
+        Account</a></li>
+
+        <li><a href="../dashboard.html">
+        <i class="fa fa-dashboard fa-2x" style="color: #ff0000;"></i>
+        Dashboard</a></li>
+
+        <li><a href="../home.html">
+        <i class="fa fa-book fa-2x" style="color: #ff0000;"></i>
+        Courses</a></li>
+
+        <li><a href="#">
+        <i class="fa-regular fa-calendar fa-2x" style="color: #ff0000;"></i>
+        Calendar</a></li>
+
+        <li><a href="#">
+        <i class="fa-solid fa-inbox fa-2x" style="color: #ff0000;"></i>
+        Inbox</a></li>
+
+        <li><a href="#">
+        <i class="fa-regular fa-clock fa-2x" style="color: #ff0000;"></i>
+        History</a></li>
+
+        <li><a href="#">
+        <i class="fa fa-tv fa-2x" style="color: #ff0000;"></i>
+        Studio</a></li>
+
+        <li><a href="#">
+        <i class="fa-solid fa-arrow-right-from-bracket fa-2x" style="color: #ff0000;"></i>
+        Commons</a></li>
+
+        <li><a href="#">
+        <i class="fa-regular fa-circle-question fa-2x" style="color: #ff0000;"></i>
+        Help</a></li>
+
+    </div>
     </td>
     <td valign="top">
-        <!-- copy rest of form elements here -->
-        <ul>
+        <div class="accountnav">
+         <ul>
         <li><a href="#">Notifications</a></li>
-        <li><a href="index.html">Profile</a></li>
+        <li><a href="#" style="color: black;">
+            <span style="border-left: 2px solid #000000; padding-left: 10px;">Profile</span>
+           </a></li>
         <li><a href="#">Files</a></li>
         <li><a href="#">Settings</a></li>
         <li><a href="#">ePortfolios</a></li>
@@ -34,27 +77,44 @@
         <li><a href="#">Qwickly Course Tools</a></li>
         <li><a href="#">Global Announcements</a></li>
         </ul>
+    </div>
     </td>
     <td>
-        Sarah Xie's Profile
-        <hr>
-        <br/>
-        <font size="+3">Sarah Xie</font>
 
-        <button onclick="window.location.href = 'edit.html';"> ✎ Edit Profile </button>
-        <br/><br/>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <i class="fa-solid fa-circle-user fa-10x" style="color: #bfbfbf;"></i>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light rounded border border-secondary" onclick="window.location.href = 'edit.html';"> ✎ Edit Profile </button>
+                </div>
+            </div>
+            <div class="row">
+                <font size="+3">Sarah Xie</font>
+            </div>
+        </div>
+
 
         <font size="+2">Contact</font>
         <br/><br/>
-        No registered services, you can add some on the <a href="#">settings</a> page. <br/><br/>
-
+        No registered services, you can add some on the 
+        <div class="link">
+        <a href="#">settings</a> page. <br/><br/>
+        </div>
         <font size="+2">Biography</font>
         <br/><br/>
         Student. <br/><br/>
 
         <font size="+2">Links</font>
         <br/><br/>
-        <a href="#">YouTube</a>
+        <i class="fa-solid fa-link" style="color: #8c8c8c;"></i>
+        
+        <div class="link">
+        <a href="https://www.youtube.com/@WebDevTV">YouTube</a>
+        </div>
+
+        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #e20000;"></i>
     </td>
     </tr> 
     </tbody>

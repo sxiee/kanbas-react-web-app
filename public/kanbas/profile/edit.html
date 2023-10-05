@@ -1,95 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="/Users/sarahxie/2023/fall/webdev/kanbas-react-web-app/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Users/sarahxie/2023/fall/webdev/kanbas-react-web-app/public/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../kanbas.css"
+         rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a54970885f.js" crossorigin="anonymous"></script>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
     <body>
+        <div class="header">
+            <i class="fa-solid fa-bars fa-2x" style="color: #e20000;"><p>Sarah Xie's Profile</p></i>
+            <p>Sarah Xie's Profile</p>
+            <hr>
+          </div>
         <table border="0" width="100%">
             <tbody>
             <tr>
                 <td valign="top">
-                    <ul>
-                        <li><a href="index.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href='../home.html'>Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                        </ul>   
+                    <div class="sidenav">
+
+                    <li><img src="/Users/sarahxie/Desktop/Northeastern.png" alt="Northeastern Logo" width="50"></li>
+
+                    </li><a href="index.html">
+                        <i class="fa-regular fa-circle-user fa-2x" style="color: #ffffff;"></i>
+                        Account</a></li>
+                
+                        <li><a href="../dashboard.html">
+                        <i class="fa fa-dashboard fa-2x" style="color: #ff0000;"></i>
+                        Dashboard</a></li>
+                
+                        <li><a href="../home.html">
+                        <i class="fa fa-book fa-2x" style="color: #ff0000;"></i>
+                        Courses</a></li>
+                
+                        <li><a href="#">
+                        <i class="fa-regular fa-calendar fa-2x" style="color: #ff0000;"></i>
+                        Calendar</a></li>
+                
+                        <li><a href="#">
+                        <i class="fa-solid fa-inbox fa-2x" style="color: #ff0000;"></i>
+                        Inbox</a></li>
+                
+                        <li><a href="#">
+                        <i class="fa-regular fa-clock fa-2x" style="color: #ff0000;"></i>
+                        History</a></li>
+                
+                        <li><a href="#">
+                        <i class="fa fa-tv fa-2x" style="color: #ff0000;"></i>
+                        Studio</a></li>
+                
+                        <li><a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket fa-2x" style="color: #ff0000;"></i>
+                        Commons</a></li>
+                
+                        <li><a href="#">
+                        <i class="fa-regular fa-circle-question fa-2x" style="color: #ff0000;"></i>
+                        Help</a></li>
+                    
+                    </div>
                 </td>
                 <td valign="top">
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                        </ul>
+                    <div class="accountnav">
+                        <ul>
+                       <li><a href="#">Notifications</a></li>
+                       <li><a href="#" style="color: black;">
+                        <span style="border-left: 2px solid #000000; padding-left: 10px;">Profile</span>
+                       </a></li>
+                       <li><a href="#">Files</a></li>
+                       <li><a href="#">Settings</a></li>
+                       <li><a href="#">ePortfolios</a></li>
+                       <li><a href="#">Shared Content</a></li>
+                       <li><a href="#">The Hub</a></li>
+                       <li><a href="#">Qwickly Course Tools</a></li>
+                       <li><a href="#">Global Announcements</a></li>
+                       </ul>
+                   </div>
                 </td>
                 <td>
-                    <h2>Sarah Xie</h2>
-        <label for="text-fields-email">
-            Name:*
-         </label>
-         <input type="text"
-               value="Sarah Xie"
-               id="text-fields-name"/>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <i class="fa-solid fa-circle-user fa-10x" style="color: #bfbfbf;"></i>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light rounded border border-secondary" onclick="window.location.href = 'index.html';"> ✎ Cancel Editing </button>
+                </div>
+            </div>
+            <div class="row">
+                <font size="+3">Sarah Xie</font>
+            </div>
+        </div>
 
-        <label for="text-fields-pronouns">
-            Pronouns:
-        </label>
-        <select id="select-one-genre">
-            <option selected value="none">
-                None</option>
-        </select> <br/> <br/>
+            
+        <br/><br/>
+        
+        <!-- Name -->
+        <div class="form-check">
+        <label for="text-fields-name">Name:*</label>
+        <input type = "text" class="form-control" 
+        type="text" id="text-fields-name" placeholder="Sarah Xie">
+        </div>
 
-        <label for="text-fields-title">
-            Title
-         </label>
-         <input type="text"
-               id="text-fields-title"/>
+        <!-- Pronouns -->
+         <div class="form-check">
+         <label for="select-one-genre">Pronouns:</label>
+        <select class="form-control" id="select-one-genre">
+        <option selected value="none">
+            None</option>
+        </select>
+        </div>
+
+        <!-- Title -->
+        <div class="form-check">
+            <label for="text-fields-name">Title:</label>
+            <input type = "text" class="form-control" 
+            type="text" id="text-fields-name" placeholder="">
+        </div>
+
         
         <!-- copy rest of form elements here -->
-
         <h3>Contact</h3>
-        No registered services, you can add some on the <a href="#">settings</a> page.
-
+        <div class="link">
+        No registered services, you can add some
+        on the 
+        <a href="#">settings</a>
+        page.
+        </div>
         <!-- copy rest of form elements here -->
 
-        <h3>Biography</h3>
-        <br/>
-        Student.
-        <br/>
-        <textarea cols="30" rows="2">Student.</textarea>
+        <div class="form-check"></div>
+        <div class="form-check">
+            <label for="text-fields-name"><h3>Biography</h3></label>
+            <input type = "text-area" class="form-control" 
+            id="text-fields-name" placeholder="Student.">
+        </div>
+ 
 
-        <!-- copy rest of form elements here -->
+        <!-- LINKS -->
 
         <h3>Links</h3>
-        <li><a href="#">Youtube Links to an external site.</a></li>
-
-        <h4>Title</h4>
-        <h4>URL</h4>
-
-        <input type="text"
-            value="Youtube"
-               id="text-fields-title"/> →
-        <input type="text"
-            value="https://www.youtube.com"
-               id="text-fields-title"/> 
-        <a href="#">Remove</a> <br/><br/>
-        <button type="button">Add another link</button> <br/>
-        <button type="button">Cancel</button> 
-        <button onclick="window.location.href = 'index.html';">Save Profile</button><br/>
-        <button type="button">Edit Profile</button>
-        <button onclick="window.location.href = 'index.html';">Cancel Editing</button><br/>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6><b>Title</b></h6>
+                </div>
+                <div class="col">
+                    <h6><b>URL</b></h6>                
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="row">
+                <div class="col">
+                    <input type="text"
+                    value="Youtube"
+                    id="text-fields-title"/>
+                </div> 
+                <div class = "col">
+                    <input type="text"
+                    value="https://www.youtube.com"
+                    id="text-fields-title"/>   
+                </div>
+            </div>
+        </div>
+  
+        
+        <a href="#"><i class="fa-solid fa-x" style="color: #e20000;"></i></a> <br/><br/>
+        <button class="btn btn-light rounded custom-button" onclick="window.location.href = 'index.html';">Add another link</button> <br/>
+  
+        <hr>
+  
+        <button class="btn btn-light rounded custom-button" onclick="window.location.href = 'index.html';">Cancel</button> 
+        <button class="btn btn-danger rounded" onclick="window.location.href = 'index.html';">Save Profile</button><br/>
         </td>
             </tr>
             </tbody>

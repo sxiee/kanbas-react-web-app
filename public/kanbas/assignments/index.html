@@ -1,132 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="/Users/sarahxie/2023/fall/webdev/kanbas-react-web-app/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Users/sarahxie/2023/fall/webdev/kanbas-react-web-app/public/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../kanbas.css"
+         rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a54970885f.js" crossorigin="anonymous"></script>
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
+    <div class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <i class="me-2 fa-solid fa-bars fa-2x" style="color: #e20000;"></i>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+            </div>
+            <button class="btn btn-light rounded custom-button" onclick="window.location.href = '#';">
+                <i class="fa-solid fa-glasses" style="color: #000000;"></i>
+                Student View
+            </button>
+        </div>
+        <hr>
+    </div>
+    
+    
     <table border="0" width="100%">
         <tbody>
         <tr>
-            <td valign="top">
-                <ul>
-                    <li><a href='../profile/index.html'>Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href='../home.html'>Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                    </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li><a href='../home.html'>Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href='../grades.html'>Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
-                    </ul>
-            </td>
-            <td>
-                <form id="text-fields">
-                    <input id="text-fields-username" placeholder="Search for Assignments"/><br/>
-                </form>
-                <button type="button">Group</button>
-                <button type="button">Assignment</button>
-                <select id="select-one-genre">
-                    <option value="EDIT ASSIGNMENT DATES">Edit Assignment Dates</option>
-                 </select>
-                <!-- copy rest of form elements here -->
-                <h3>ASSIGNMENTS 40% of Total</h3>
-                <select id="select-one-genre">
-                    <option selected value="EDIT">Edit</option>
-                    <option value="SPEED GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE TO">Move To...</option>
-                    <option value="SEND TO">Send To...</option>
-                    <option value="COPY TO">Copy To...</option>
-                    <option value="SHARE TO COMMONS">Share to Commons</option>
-                 </select>
-                 <li><a href="edit.html">A1 - ENV + HTML Multiple Modules</a></li> | Not available
-                 <li><a href="edit.html">A2 - CSS + BOOTSTRAP Multiple Modules</a></li> | Not available
-                 <li><a href="edit.html">A3 - JS + REACT Multiple Modules</a></li> | Not available
-                 <li><a href="edit.html">A4 - STATE + REDUX Multiple Modules</a></li> | Not available
-                 <li><a href="edit.html">A5 - NODE + SESSION Multiple Modules</a></li> | Not available
-                 <li><a href="edit.html">A6 - MONGO + MONGOOSE Multiple Modules</a></li> | Not available
+        <td valign="top">
             
-                <h3>QUIZZES 10% of Total</h3>
-                <select id="select-one-genre">
-                    <option selected value="EDIT">Edit</option>
-                    <option value="SPEED GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE TO">Move To...</option>
-                    <option value="SEND TO">Send To...</option>
-                    <option value="COPY TO">Copy To...</option>
-                    <option value="SHARE TO COMMONS">Share to Commons</option>
-                 </select>
-                 <li><a href="#">Q1 - HTML Multiple Modules</a></li> | Not available
-                 <li><a href="#">Q2 - CSS Multiple Modules</a></li> | Not available
-                 <li><a href="#">Q3 - JS, ES6 Multiple Modules</a></li> | Not available
-                 <li><a href="#">Q4 - NODE Multiple Modules</a></li> | Not available
-                 <li><a href="#">Q5 - MONGO Multiple Modules</a></li> | Not available
-                 
-                 <h3>EXAMS 20% of Total</h3>
-                 <select id="select-one-genre">
-                     <option selected value="EDIT">Edit</option>
-                     <option value="SPEED GRADER">Speed Grader</option>
-                     <option value="DUPLICATE">Duplicate</option>
-                     <option value="DELETE">Delete</option>
-                     <option value="MOVE TO">Move To...</option>
-                     <option value="SEND TO">Send To...</option>
-                     <option value="COPY TO">Copy To...</option>
-                     <option value="SHARE TO COMMONS">Share to Commons</option>
-                  </select>
-                  <li><a href="#">Midterm Multiple Modules</a></li> | Not available
-                  <li><a href="#">Final Multiple Modules</a></li> | Not available
-                
-                 <h3>PROJECT 30% of Total</h3>
-                 <select id="select-one-genre">
-                     <option selected value="EDIT">Edit</option>
-                     <option value="SPEED GRADER">Speed Grader</option>
-                     <option value="DUPLICATE">Duplicate</option>
-                     <option value="DELETE">Delete</option>
-                     <option value="MOVE TO">Move To...</option>
-                     <option value="SEND TO">Send To...</option>
-                     <option value="COPY TO">Copy To...</option>
-                     <option value="SHARE TO COMMONS">Share to Commons</option>
-                  </select>
-                  <li><a href="#">Project Multiple Modules</a></li> | Not available
-            </td>
+            <div class="sidenav">
+
+                <li><img src="/Users/sarahxie/Desktop/Northeastern.png" alt="Northeastern Logo" width="50"></li>
+
+                </li><a href="../profile/index.html">
+                <i class="fa-regular fa-circle-user fa-2x" style="color: #ffffff;"></i>
+                Account</a></li>
+
+                <li><a href="../dashboard.html">
+                <i class="fa fa-dashboard fa-2x"></i>
+                Dashboard</a></li>
+
+                <li><a href="../home.html" style = "background-color: #ffffff; color: #e20000;">
+                <i class="fa fa-book fa-2x"></i>
+                Courses</a></li>
+
+                <li><a href="#">
+                <i class="fa-regular fa-calendar fa-2x"></i>
+                Calendar</a></li>
+
+                <li><a href="#">
+                <i class="fa-solid fa-inbox fa-2x"></i>
+                Inbox</a></li>
+
+                <li><a href="#">
+                <i class="fa-regular fa-clock fa-2x"></i>
+                History</a></li>
+
+                <li><a href="#">
+                <i class="fa fa-tv fa-2x"></i>
+                Studio</a></li>
+
+                <li><a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
+                Commons</a></li>
+
+                <li><a href="#">
+                <i class="fa-regular fa-circle-question fa-2x"></i>
+                Help</a></li>
+            </div>
+        </td>
+        
+        <div class="container">
+            <!-- Course Navigation -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <td valign="top">
+                        <div class="coursenav">
+                        <ul>
+                           <li><a href="../home.html">Home</a></li>
+                           <li><a href="#">Modules</a></li>
+                           <li><a href="#">Piazza</a></li>
+                           <li><a href="#">Zoom Meetings</a></li>
+                           <li><a href="#">Quizzes</a></li>
+                           <li><a href="#" style="color: black;">
+                            <span style="border-left: 2px solid #000000; padding-left: 10px;">Assignments</span>
+                           </a></li>
+                           <li><a href="../grades.html">Grades</a></li>
+                           <li><a href="#">People</a></li>
+                           <li><a href="#">Microsoft Teams Meetings</a></li>
+                           <li><a href="#">FACT Reporting and Photo Roster</a></li>
+                           <!-- hidden -->
+                           <li><a href="#">Discussions</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+            
+                           <li><a href="#">Progress Reports(EAB Navigate)</a></li>
+                           <li><a href="#">Settings</a></li>
+                        </ul>
+                        </div>
+                    </td> 
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <!-- Buttons -->
+                    <td>    
+                    <ul class="list-group">
+                        <div class="column">
+                            <input class="form-control custom-search float-start" type="search" placeholder="Search for Assignment" aria-label="Search">
+                            <button class="btn btn-light rounded custom-button float-end" onclick="window.location.href = '#';"><i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i></button> 
+                            <button class="btn btn-danger rounded float-end" onclick="window.location.href = '#';"><i class="me-1 fa-solid fa-plus"></i>
+                                Assignment</button>
+                            <button class="btn btn-light rounded custom-button float-end" onclick="window.location.href = '#';"><i class="me-1 fa-solid fa-plus"></i>
+                            Group</button>    
+                        </div>
+                        <hr>
+                        <li class="list-group-item list-group-item-secondary">
+                            <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            <i class="me-1 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            Assignments
+                            <div class ="float-end">
+                            <button class="me-1 btn btn rounded-pill custom-button" onclick="window.location.href = '#';">40% of Total</button> 
+                            <i class="me-1 fa-solid fa-plus" style="color: #000000;"></i>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            </div>
+                        </li>
+
+
+                        <li class="list-group-item list-item-border">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Left side -->
+                                <div class="align-items-center">
+                                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                    <i class="me-2 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                    <i class="me-2 fa-solid fa-file-pen" style="color: #17a620;"></i>
+                                </div>
+                        
+                                <!-- Middle column -->
+                                <div style="flex: 1;">
+                                    <h6 style="margin-bottom: 0px;"><a href="edit.html" style="color:#000000">A1 SETUP</a></h6>
+                                    <p class="small-text" style="margin: 0px;">Week 0 - Content</p>
+                                    <p class="small-text" style="margin: 0px;"><b>Due</b> Date at 11:59pm | 100 pts</p>
+                                </div>
+                                
+                                <!-- Icons on the right -->
+                                <div>
+                                    <i class="me-2 fa-solid fa-circle-check" style="color: #abd6ad;"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item list-item-border">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Left side -->
+                                <div class="align-items-center">
+                                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                    <i class="me-2 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                    <i class="me-2 fa-solid fa-file-pen" style="color: #17a620;"></i>
+                                </div>
+                        
+                                <!-- Middle column -->
+                                <div style="flex: 1;">
+                                    <h6 style="margin-bottom: 0px;"><a href="edit.html" style="color:#000000">A2 HTML</a></h6>
+                                    <p class="small-text" style="margin: 0px;">Week 1 - Content</p>
+                                    <p class="small-text" style="margin: 0px;"><b>Due</b> Date at 11:59pm | 100 pts</p>
+                                </div>
+                                
+                                <!-- Icons on the right -->
+                                <div>
+                                    <i class="me-2 fa-solid fa-circle-check" style="color: #abd6ad;"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                   
+
+                    <li class="list-group-item list-item-border">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Left side -->
+                            <div class="align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-file-pen" style="color: #17a620;"></i>
+                            </div>
+                    
+                            <!-- Middle column -->
+                            <div style="flex: 1;">
+                                <h6 style="margin-bottom: 0px;"><a href="edit.html" style="color:#000000">A3 CSS</a></h6>
+                                <p class="small-text" style="margin: 0px;">Week 2 - Content</p>
+                                <p class="small-text" style="margin: 0px;"><b>Due</b> Date at 11:59pm | 100 pts</p>
+                            </div>
+                            
+                            <!-- Icons on the right -->
+                            <div>
+                                <i class="me-2 fa-solid fa-circle-check" style="color: #abd6ad;"></i>
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="list-group-item list-item-border">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Left side -->
+                            <div class="align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-file-pen" style="color: #17a620;"></i>
+                            </div>
+                    
+                            <!-- Middle column -->
+                            <div style="flex: 1;">
+                                <h6 style="margin-bottom: 0px;"><a href="edit.html" style="color:#000000">A4 BOOTSTRAP</a></h6>
+                                <p class="small-text" style="margin: 0px;">Week 3 - Content</p>
+                                <p class="small-text" style="margin: 0px;"><b>Due</b> Date at 11:59pm | 100 pts</p>
+                            </div>
+                            
+                            <!-- Icons on the right -->
+                            <div>
+                                <i class="me-2 fa-solid fa-circle-check" style="color: #abd6ad;"></i>
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item list-item-border">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Left side -->
+                            <div class="align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-file-pen" style="color: #17a620;"></i>
+                            </div>
+                    
+                            <!-- Middle column -->
+                            <div style="flex: 1;">
+                                <h6 style="margin-bottom: 0px;"><a href="edit.html" style="color:#000000">A5 JAVASCRIPT</a></h6>
+                                <p class="small-text" style="margin: 0px;">Week 4 - Content</p>
+                                <p class="small-text" style="margin: 0px;"><b>Due</b> Date at 11:59pm | 100 pts</p>
+                            </div>
+                            
+                            <!-- Icons on the right -->
+                            <div>
+                                <i class="me-2 fa-solid fa-circle-check" style="color: #abd6ad;"></i>
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item list-item-border">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Left side -->
+                            <div class="align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                <i class="me-2 fa-solid fa-file-pen" style="color: #17a620;"></i>
+                            </div>
+                    
+                            <!-- Middle column -->
+                            <div style="flex: 1;">
+                                <h6 style="margin-bottom: 0px;"><a href="edit.html" style="color:#000000">A6 REACT</a></h6>
+                                <p class="small-text" style="margin: 0px;">Week 5 - Content</p>
+                                <p class="small-text" style="margin: 0px;"><b>Due</b> Date at 11:59pm | 100 pts</p>
+                            </div>
+                            
+                            <!-- Icons on the right -->
+                            <div>
+                                <i class="me-2 fa-solid fa-circle-check" style="color: #abd6ad;"></i>
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    </ul>
+                    </td>
+                </div>
         </tr>
-    </tbody>
-</table>
+        </tbody>
+     </table>
 
-
-
-
-
-
-
-
-
-    
 </body>
 </html>
