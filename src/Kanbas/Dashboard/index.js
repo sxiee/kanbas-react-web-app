@@ -21,7 +21,7 @@ function Dashboard({
       <div className="mb-4">
         <input
           type="text"
-          className="form-control d-inline-block"
+          className="form-control d-inline-block mr-2"
           style={{ width: "auto" }}
           placeholder="New Course"
           value={course.name}
@@ -29,7 +29,7 @@ function Dashboard({
             setCourse({ ...course, name: event.target.value });
           }}
         />
-        <button className="btn btn-success me-2" onClick={addCourse}>Add</button>
+        <button className="btn btn-success ms-2 me-2" onClick={addCourse}>Add</button>
         <button className="btn btn-primary" onClick={() => updateCourse(course)}>Update</button>
       </div>
       
