@@ -30,9 +30,6 @@ function Courses({ courses }) {
           </Routes>
         </div>
       </div>
-      {/* <pre>
-        <code>{JSON.stringify(db.courses, null, 2)}</code>
-      </pre> */}
     </div>
   );
 }
