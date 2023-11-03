@@ -15,7 +15,7 @@ function ModuleList() {
   const dispatch = useDispatch();
 
   return (
-    <div className="container mt-4">
+    <div className="container">
       <div className="row mb-3">
         <div className="col">
         <button 
