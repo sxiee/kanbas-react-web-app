@@ -9,7 +9,6 @@ import AssignmentEditor from "../Assignments/AssignmentEditor";
 
 function Courses({ courses }) {
   const { courseId } = useParams();
-  // const course = db.courses.find((course) => course._id === courseId);
   const course = courses.find((course) => course._id === courseId);
   return (
     <div>
