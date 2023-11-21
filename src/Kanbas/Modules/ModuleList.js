@@ -6,10 +6,33 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import { findModulesForCourse, createModule } from "./client";
+import * as client from "./client";
 
 function ModuleList() {
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -26,7 +49,10 @@ function ModuleList() {
           </button>
           <button 
             className="btn btn-success" 
-            onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+            onClick={() => dispatch(<button
+              onClick={handleAddModule}>
+              Add
+            </button>)}
           >
             Add
           </button>
@@ -48,9 +74,10 @@ function ModuleList() {
       <ul className="list-group">
         {modules.filter((module) => module.course === courseId).map((module, index) => (
           <li key={index} className="list-group-item">
+      
             <button 
               className="btn btn-danger" 
-              onClick={() => dispatch(deleteModule(module._id))}
+              onClick={() => dispatch(handleDeleteModule(module._id))}
             >
               Delete
             </button>
