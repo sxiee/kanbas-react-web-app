@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< Updated upstream
+=======
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="kanbas.css"
+         rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a54970885f.js" crossorigin="anonymous"></script>
+>>>>>>> Stashed changes
    <meta charset="UTF-8">
    <title>Title</title>
 </head>
 <body>
+<<<<<<< Updated upstream
     <table border="0" width="100%">
         <tr>
             <td valign="top">
@@ -117,3 +126,245 @@
      </table>
 </body>
 </html>
+=======
+    <div class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <i class="me-2 fa-solid fa-bars fa-2x" style="color: #e20000;"></i>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                    </ol>
+                </nav>
+            </div>
+            <button class="btn btn-light rounded custom-button" onclick="window.location.href = '#';">
+                <i class="fa-solid fa-glasses" style="color: #000000;"></i>
+                Student View
+            </button>
+        </div>
+        <hr>
+    </div>
+    
+    
+    <table border="0" width="100%">
+        <tbody>
+        <tr>
+        <td valign="top">
+            
+            <div class="sidenav">
+
+                <li><img src="../Northeastern.png" alt="Northeastern Logo" width="50"></li>
+
+                </li><a href="profile/index.html">
+                <i class="fa-regular fa-circle-user fa-2x" style="color: #ffffff;"></i>
+                Account</a></li>
+
+                <li><a href="dashboard.html">
+                <i class="fa fa-dashboard fa-2x"></i>
+                Dashboard</a></li>
+
+                <li><a href="home.html" style = "background-color: #ffffff; color: #e20000;">
+                <i class="fa fa-book fa-2x"></i>
+                Courses</a></li>
+
+                <li><a href="#">
+                <i class="fa-regular fa-calendar fa-2x"></i>
+                Calendar</a></li>
+
+                <li><a href="#">
+                <i class="fa-solid fa-inbox fa-2x"></i>
+                Inbox</a></li>
+
+                <li><a href="#">
+                <i class="fa-regular fa-clock fa-2x"></i>
+                History</a></li>
+
+                <li><a href="#">
+                <i class="fa fa-tv fa-2x"></i>
+                Studio</a></li>
+
+                <li><a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
+                Commons</a></li>
+
+                <li><a href="#">
+                <i class="fa-regular fa-circle-question fa-2x"></i>
+                Help</a></li>
+            </div>
+        </td>
+        
+        <div class="container">
+            <!-- Course Navigation -->
+            <div class="row">
+                <div class="d-none d-md-table-cell">
+                    <td valign="top">
+                        <div class="coursenav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                           <li><a href="#">Modules</a></li>
+                           <li><a href="#">Piazza</a></li>
+                           <li><a href="#">Zoom Meetings</a></li>
+                           <li><a href="#">Assignments</a></li>
+                           <li><a href="#">Quizzes</a></li>
+                           <li><a href="#" style="color: black;">
+                            <span style="border-left: 2px solid #000000; padding-left: 10px;">Grades</span>
+                           </a></li>                           <li><a href="#">People</a></li>
+                           <li><a href="#">Panapto Video</a></li>
+                           <!-- hidden -->
+                           <li><a href="#">Discussions</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Announcements</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Pages</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Files</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash"></i></li>
+                           <li><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash"></i></li>
+            
+                           <li><a href="#">Progress Reports(EAB Navigate)</a></li>
+                           <li><a href="#">Settings</a></li>
+                        </ul>
+                       </div>
+                    </td> 
+                </div>
+
+                <td>
+                    <div class="grade-screen">
+                        <button class="me-2 btn btn-light rounded custom-button float-end" onclick="window.location.href = '#';"><i class="fa-solid fa-gear" style="color: #000000;"></i></button> 
+                        <button class="me-2 btn btn-light rounded custom-button float-end" onclick="window.location.href = '#';"><i class="me-2 fa-solid fa-file-export" style="color: #000000;"></i>Export</button>
+                        <button class="me-2 btn btn-light rounded custom-button float-end" onclick="window.location.href = '#';"><i class="me-2 fa-solid fa-file-import" style="color: #000000;"></i>Import</button>
+                                
+                            <!-- copy rest of form elements here -->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h5>Student Names</h5>
+                                    <form id="text-fields">
+                                        <input id="text-fields-student" class="form-control" placeholder="Search Students"/>
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Assignment Names</h5>
+                                    <form id="text-fields-assignment">
+                                        <input id="text-fields-assignment" class="form-control" placeholder="Search Assignments"/>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                    
+    
+                        <button class="me-2 btn btn-light rounded custom-button" onclick="window.location.href = '#';"><i class="fa-solid fa-filter" style="color: #000000;"></i>Apply Filters</button> 
+
+    
+                        <!-- copy rest of form elements here -->
+                        <div class="student-assignment-list">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <b>Student Name</b>
+                                        </div>
+                                        <div class="col-2">
+                                            A1 SETUP <br> Out of 100
+                                        </div>
+                                        <div class="col-2">
+                                            A2 HTML <br> Out of 100
+                                        </div>
+                                        <div class="col-2">
+                                            A3 CSS <br> Out of 100
+                                        </div>
+                                        <div class="col-2">
+                                            A4 BOOTSTRAP <br> Out of 100
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            Alice Wonderland
+                                        </div>
+                                        <div class="col-2">
+                                            98
+                                        </div>
+                                        <div class="col-2">
+                                            89
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="text" class="form-control" placeholder="93" title="number"/>
+                                        </div>
+                                        <div class="col-2">
+                                            90
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item-secondary">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            Princes Leia
+                                        </div>
+                                        <div class="col-2">
+                                            98
+                                        </div>
+                                        <div class="col-2">
+                                            80
+                                        </div>
+                                        <div class="col-2">
+                                            87
+                                        </div>
+                                        <div class="col-2">
+                                            86
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            Luke Skywalker
+                                        </div>
+                                        <div class="col-2">
+                                            99
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="text" class="form-control" placeholder="84" title="number"/>
+                                        </div>
+                                        <div class="col-2">
+                                            97
+                                        </div>
+                                        <div class="col-2">
+                                            82
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item-secondary">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            Han Solo
+                                        </div>
+                                        <div class="col-2">
+                                            83
+                                        </div>
+                                        <div class="col-2">
+                                            99
+                                        </div>
+                                        <div class="col-2">
+                                            94
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="text" class="form-control" placeholder="91" title="number"/>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+
+                  
+    </td>
+    </tr>
+       
+     </tbody>
+     </table>
+     
+
+    </body>
+    </html>
+>>>>>>> Stashed changes
