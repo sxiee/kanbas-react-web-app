@@ -3,10 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { setCount2 } from "./counter2Reducer";
 
 function Counter2() {
-<<<<<<< Updated upstream
-  // const [count2, setCount2] = useState(0);
-=======
->>>>>>> Stashed changes
   const { count2 } = useSelector((state) => state.counter2Reducer);
   const { count1 } = useSelector((state) => state.counter1Reducer);
   const dispatch = useDispatch();

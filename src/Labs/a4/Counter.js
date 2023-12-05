@@ -2,18 +2,6 @@ import React, { useState } from "react";
 function Counter() {
   let [count, setCount] = useState(7);
   console.log(count);
-<<<<<<< Updated upstream
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const decrement = () => {
-    setCount(count - 1);
-  };
-
-=======
->>>>>>> Stashed changes
   return (
     <div>
       <h2>Counter: {count}</h2>

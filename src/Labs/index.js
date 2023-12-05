@@ -1,11 +1,11 @@
-import { Routes, Route, Link, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Assignment3 from "./a3";
 import Nav from "../Nav";
 import Assignment4 from "./a4";
 import Assignment5 from "./a5";
-import {Routes, Route, Navigate} from "react-router";
 import store from "./store";
 import { Provider } from "react-redux";
+
 function Labs() {
     return (
     <Provider store={store}>

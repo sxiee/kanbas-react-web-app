@@ -1,16 +1,11 @@
 function JsonStringify() {
   const squares = [1, 4, 16, 25, 36];
-  const loggedIn = true;
+  console.log(squares);
   return (
     <div>
-      <h2>Json Stringify</h2>
-      loggedIn = {loggedIn}
-      <br />
-      loggedIn = {JSON.stringify(loggedIn)}
-      <br />
-      squares = {squares}
-      <br />
+      <h4>JSON Stringify</h4>
       squares = {JSON.stringify(squares)}
+      <br />
     </div>
   );
 }
